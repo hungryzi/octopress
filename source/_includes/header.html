@@ -1,1 +1,29 @@
+<h3><a href="{{ root_url }}/">{{ site.title }}</a></h3>
+
+<div class="alignleft menu">
+  <ul>
+    {% if site.github_user && site.github_show_profile_link %}
+    <li>
+      <a href="https://github.com/{{site.github_user}}">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.twitter_user %}
+    <li>
+      <a href="https://twitter.com/{{site.twitter_user}}">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.linkedin_user %}
+    <li>
+      <a href="https://linkedin.com/{{site.linkedin_user}}">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</div>
+
 {% include custom/header.html %}

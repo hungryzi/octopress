@@ -1,0 +1,40 @@
+$header-height: 30px;
+
+#header{
+  height: $header-height;
+  padding: 30px 0;
+  margin-bottom: 100px;
+
+  line-height: $header-height;
+  @media screen and (max-width: 1040px){
+    margin-bottom: 50px;
+    height: auto;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 600px){
+  margin-bottom:40px;
+  }
+  a{
+    color: $color-gray01;
+    @include transition(color 0.3s);
+    &:hover{
+      color: $color-main;
+      border-bottom:none;
+    }
+  }
+  h1{
+    margin-top:15px;
+    font-weight: bold;
+    font-size: 48px;
+    @media screen and (max-width: 1040px){
+      float: none;
+    }
+    }
+}
+.menu {
+  ul li {
+    display: inline-block;
+    list-style: none;
+  }
+}

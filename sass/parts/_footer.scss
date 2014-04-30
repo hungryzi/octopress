@@ -1,6 +1,26 @@
 footer{
   padding: 15px 0;
-  text-align: center;
-  font-size: 0.9em;
+
+  h1 {
+    font-family: DejaVuSans;
+    font-weight: 100;
+  }
+
+  section.cats {
+    text-align: center;
+    h1.kiss {
+      display: none;
+    }
+  }
+
+  section.cats:hover {
+    h1.grin {
+      display: none;
+    }
+
+    h1.kiss {
+      display: inline;
+    }
+  }
 }
 

@@ -11,7 +11,11 @@
   </h2>
 {% else %}
   <div>
-    <h2 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
-    <div class="date">{% include post/date.html %}{{ time }}</div>
+    <h2 class="title">
+      {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
+      <span class="date">{% include post/date.html %}{{ time }}</span>
+    </h2>
+
+    <div class="entry-content">{{ content }}</div>
   </div>
 {% endif %}

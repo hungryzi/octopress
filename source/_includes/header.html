@@ -1,6 +1,6 @@
-<h3><a href="{{ root_url }}/">{{ site.title }}</a></h3>
+<h3>
+  <a href="{{ root_url }}/">{{ site.title }}</a>
 
-<div class="alignleft menu">
   <ul>
     {% if site.github_user && site.github_show_profile_link %}
     <li>
@@ -18,12 +18,12 @@
     {% endif %}
     {% if site.linkedin_user %}
     <li>
-      <a href="https://linkedin.com/{{site.linkedin_user}}">
+      <a href="{{site.linkedin_link}}">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     {% endif %}
   </ul>
-</div>
+</h3>
 
 {% include custom/header.html %}

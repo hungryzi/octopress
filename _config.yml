@@ -102,6 +102,7 @@ google_analytics_tracking_id: UA-38381758-1
 # Facebook Like
 facebook_like: false
 
+flickr_user: hungryzi
 flickr:
   api_key: 24457f4824f4d90f6c8c8588646b1351
   shared_secret: 4eebc3411ad4e27e
